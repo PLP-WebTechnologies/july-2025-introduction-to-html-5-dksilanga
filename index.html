@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple, accessible webpage demonstrating proper HTML5 structure and SEO best practices">
+    <meta name="keywords" content="HTML5, accessibility, semantic HTML, SEO, web development">
+    <meta name="author" content="Your Name">
+    <title>HTML5 Daniel Assignment</title>  
+    <!-- Open Graph / Social Media Meta (optional) -->
+    <meta property="og:title" content="Accessible HTML5 Template">
+    <meta property="og:description" content="A simple, accessible webpage demonstrating proper HTML5 structure">
+    <meta property="og:type" content="website">
+
+    <style>
+        /* Simple reset for demonstration */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        header, footer { background: #f4f4f4; padding: 1rem; text-align: center; }
+        nav ul { display: flex; justify-content: center; list-style: none; }
+        nav ul li { margin: 0 1rem; }
+        main { padding: 2rem; max-width: 1200px; margin: 0 auto; }
+        section { margin-bottom: 2rem; }
+        img { max-width: 100%; height: auto; }
+        .skip-link {
+            position: absolute;
+            left: -9999px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+        .skip-link:focus {
+            position: static;
+            width: auto;
+            height: auto;
+            padding: 0.5rem;
+            background: #000;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to content link for screen readers -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header role="banner">
+        <h1 style="color: red;">Welcome to Our Website</h1>
+        <p>This is my week1 assiment on HTML5</p>
+        
+        <nav role="navigation" aria-label="Main navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="main-content" role="main">
+        <article>
+            <header>
+                <h2>Latest Article Title</h2>
+                <p>Published on <time datetime=Now()>November 15, 2023</time></p>
+            </header>
+            
+            <section aria-labelledby="section1-heading">
+                <h3 id="section1-heading">Section Heading</h3>
+                <p>This is a paragraph of text in our article. Semantic HTML helps search engines understand your content better.</p>
+                
+                <figure>
+                    <img src="download.jpg" alt="Descriptive text about the image" width="600" height="400">
+                    <figcaption style="color: red;">Html image</figcaption>
+                </figure>
+            </section>
+            
+            <section aria-labelledby="section2-heading">
+                <h3 style="color: red;" id="section2-heading">Another Section</h3>
+                <p>My take home for this lesson is:.</p>
+                
+                <ul>
+                    <li>Semantic HTML improves accessibility</li>
+                    <li>Proper structure helps SEO</li>
+                    <li>Clean code is easier to maintain</li>
+                </ul>
+            </section>
+        </article>
+        
+        <aside role="complementary" aria-labelledby="aside-heading">
+            <h3 id="aside-heading">Related Information You may need to know</h3>
+            <p>HTML5 is a major revision of the HyperText Markup Language (HTML) and serves as the foundation of modern web development.
+                Its purpose is to enhance the structure, functionality,
+                 and flexibility of web applications and websites.</p>
+        </aside>
+    </main>
+    
+    <footer role="contentinfo">
+        <p>&copy; 2023 Daniel Thuo PLP academy Student. All rights reserved.</p>
+        <address>
+            Contact us at <a href="dksilanga@gmail.com">dksilanga@gmail.com</a>
+        </address>
+       
+    </footer>
+</body>
+</html>
